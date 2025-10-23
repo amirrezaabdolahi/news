@@ -5,7 +5,7 @@ const NewsPage = async ({ searchParams }) => {
 
 
     const { query } = await searchParams;
-    const news = await fetch(`http://localhost:3000/api/news?q=${query}`).then(res => res.json())
+    const news = await fetch(`/api/news?q=${query}`).then(res => res.json())
 
 
     return (
